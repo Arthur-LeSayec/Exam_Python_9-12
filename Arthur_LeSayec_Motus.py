@@ -15,15 +15,20 @@ huitiemeMot= ["M","E","D","U","S","E"]
 neuviemeMot= ["F","I","L","M","E","R"]
 dixiemeMot= ["Z","A","P","P","E","R"]
 
-def trouverLettre (premierMot,mot_joueur):
+def retourIndice (tableau_motus,lettre):
     for i in range (0,6):
-        if (premierMot [i] == mot_joueur [j]):
-            print(Back.RED + mot_joueur[j], end = " ")
+        if (tableau_motus [i] ==lettre):
+            return i
+
+    
+def trouverLettre (tableau_motus,mot_joueur):
+    for i in range (0,6):
+        if (tableau_motus [i] == mot_joueur [i]):
+            print(Back.RED + mot_joueur[i], end = " ")
         else :
-            print (Back.BLUE + mot_joueur[j], end = " ")
-    return i 
+            print (Back.BLUE + mot_joueur[i], end = " ")
+
     
     
-for i in range (0,9)
-    mot_joueur = input ("Veuillez saisir un mot")
-    trouverLettre (mot_joueur)
+mot_joueur = input ("Veuillez saisir un mot")
+   
