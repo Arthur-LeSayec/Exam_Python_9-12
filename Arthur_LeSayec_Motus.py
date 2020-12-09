@@ -5,7 +5,7 @@ from colorama import Fore, Back, Style
 import random
 
 
-#Liste des 10 mots a chercher dans le mo-mo-mo-motus
+#Liste des 10 mots a chercher dans le mo-mo-mo-motus !
 premierMot=["A","C","C","R","O","C"]
 secondMot= ["A","V","A","L","E","R"]
 troisiemeMot= ["B","A","M","B","O","U"]
@@ -28,14 +28,14 @@ def retourIndice (tableau_motus,lettre):
            
 
 # renvoi une lettre 
-# def trouverLettre (tableau_motus,mot_joueur):
-    # for i in range (0,6):
-        # if (tableau_motus [i] == mot_joueur [i]):
-            # print(Back.RED + mot_joueur[i], end = " ")
-        # else :
-            # print (Back.BLUE + mot_joueur[i], end = " ")
+def trouverLettre (tableau_motus,mot_joueur):
+    for i in range (0,6):
+        if (tableau_motus [i] == mot_joueur [i]):
+            print(Back.RED + mot_joueur[i], end = " ")
+        else :
+            print (Back.BLUE + mot_joueur[i], end = " ")
 
     
     
-# mot_joueur = input ("Veuillez saisir un mot")
+mot_joueur = input ("Veuillez saisir un mot")
    
